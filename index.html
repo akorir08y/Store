@@ -107,8 +107,9 @@
             <div class="productDetails">
                 <h1 class="productTitle">AIR FORCE</h1>
                 <h2 class="productPrice">$199</h2>
-                <p class="productDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget dolor 
-                    id est cursus sollicitudin. Donec quis consequat massa, vel lobortis eros. 
+                <p class="productDesc">The Air Force 1 '07 Mid is everything you love best: crisp overlays, bold accents and the perfect amount of flash to let you shine. 
+                    The padded, mid-height collar with classic hook-and-loop closure mixes 
+                    style versatility with heritage b-ball comfort while perforations on the toe keep you cool. 
                     </p>
                 <div class="colors">
                     <div class="color"></div>
@@ -123,26 +124,26 @@
                 <button class="productButton">BUY NOW!</button>
             </div>
             <div class="payment">
-                <h1 class="payTitle">Personal Information</h1>
-                <label for="">Name and Surname</label>
-                <input type="text" placeholder="John Doe" class="payInput">
-                <label for="">Phone Number</label>
-                <input type="text" placeholder="254" class="payInput">
-                <label for="">Address</label>
-                <input type="text" placeholder="Baricho Rd" class="payInput">
-                <h1 class="payTitle">Card Information</h1>
-                <div class="cardIcons">
-                    <img src="img/visa.png" alt="" class="cardIcon">
-                    <img src="img/master.png" alt="" class="cardIcon">
-                </div>
-                <input type="password" placeholder="Card Number" class="payInput">
-                <div class="cardInfo">
-                    <input type="text" placeholder="mm" class="payInput sm">
-                    <input type="text" placeholder="yyyy" class="payInput sm">
-                    <input type="text" placeholder="cvv" class="payInput sm">
-                </div>
-                <button class="payButton">Checkout!</button>
-                <span class="close">X</span>
+                    <h1 class="payTitle">Personal Information</h1>
+                    <label for="">Name and Surname</label>
+                    <input type="text" placeholder="John Doe" id="name" name="name" class="payInput">
+                    <label for="">Phone Number</label>
+                    <input type="text" placeholder="254" id="phone-number" name="phone-number" class="payInput">
+                    <label for="">Address</label>
+                    <input type="text" placeholder="Baricho Rd" id="address" name="address" class="payInput">
+                    <h1 class="payTitle">Card Information</h1>
+                    <div class="cardIcons">
+                        <img src="img/visa.png" alt="" class="cardIcon">
+                        <img src="img/master.png" alt="" class="cardIcon">
+                    </div>
+                    <input type="password" id="card-number" name="card-number" placeholder="Card Number" class="payInput">
+                    <div class="cardInfo">
+                        <input type="text" placeholder="mm" id="month" name="month" class="payInput sm">
+                        <input type="text" placeholder="yyyy" id="year" name="year" class="payInput sm">
+                        <input type="text" placeholder="cvv" id="details" name="details" class="payInput sm">
+                    </div>
+                    <button class="payButton" onclick="submitForm()">Checkout!</button>
+                    <span class="close">X</span>
             </div>
         </div>
             <div class="gallery">
@@ -231,12 +232,13 @@
                         </div>
                     </div>
                     <div class="footerRightMenu">
-                        <span class="copyright">@Andrew Keitany. All rights reserved. 2024.</span>
+                        <span class="copyright">@Dalton Njuguna. All rights reserved. 2024.</span>
                     </div>
                 </div>
             </footer>
         
             
         <script src="js/app.js"></script>
+        <script src="js/form.js"></script>
     </body>
 </html>
